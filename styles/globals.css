@@ -106,3 +106,25 @@ body{
   margin: 10px;
 }
 
+
+/* task 5 css */
+
+.DeleteBtn{
+  padding:15px;
+  background-color: rgb(240, 12, 12);
+  border-radius: 0px 25px 0px 25px;
+  float: right;
+  color: white;
+  font-weight: bold;
+}
+
+.countItem{
+  padding:15px;
+  background-color: rgb(17, 219, 230);
+  border-radius: 25px 25px 25px 25px;
+  color: white;
+  font-weight: bold;
+  font-size: large;
+  border:none;
+  margin-bottom: 10px;
+}
