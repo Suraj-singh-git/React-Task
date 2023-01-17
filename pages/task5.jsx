@@ -49,7 +49,12 @@ function Section() {
       </h2>
       <div className="itemBox">
         {foodList.map((food, index) => (
-          <ItemBox food={food.name} cal={food.cal} />
+          <ItemBox
+            food={food.name}
+            cal={food.cal}
+            foodList={foodList}
+            setElement={setElement}
+          />
         ))}
       </div>
     </div>
@@ -69,7 +74,15 @@ function ItemBox(props) {
     <div className="items">
       <h2>
         {props.food} - {msg}{" "}
-        <button className="DeleteBtn" onClick={() => removeElement(index)}>
+        <button
+          className="DeleteBtn"
+          onClick={() => {
+            const temp = props.foodList.filter(
+              (food) => props.food != food.name
+            );
+            props.setElement(temp);
+          }}
+        >
           Delete
         </button>
       </h2>
@@ -78,10 +91,5 @@ function ItemBox(props) {
     </div>
   );
 }
-
-const removeElement = (index) => {
-  const newElement = foodList.filter((_, i) => i != index);
-  setElement(newElement);
-};
 
 export default task5;
