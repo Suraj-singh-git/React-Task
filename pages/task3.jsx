@@ -1,8 +1,10 @@
 import React from "react";
+import Navbar from "../components/Navbar";
 
 function task3() {
   return (
     <div>
+      <Navbar />
       <Header />
       <Section />
     </div>

@@ -1,9 +1,11 @@
 import React, { useState } from "react";
+import Navbar from "../components/Navbar";
 
 function task8() {
   const [tasks, setTasks] = useState([]);
   return (
     <div>
+      <Navbar />
       <h1>To Do List</h1>
       <AddTask tasks={tasks} setTasks={setTasks} />
       <ShowTaskList tasks={tasks} />

@@ -1,8 +1,11 @@
 import React from "react";
+import Navbar from "../components/Navbar";
 
 function task2() {
   return (
     <div>
+      <Navbar />
+
       <Header />
       <Section />
     </div>

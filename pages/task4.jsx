@@ -1,8 +1,10 @@
 import React, { useState } from "react";
+import Navbar from "../components/Navbar";
 
 function task4() {
   return (
     <div>
+      <Navbar />
       <Counter />
       <Counter />
       <Counter />

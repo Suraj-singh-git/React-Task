@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Navbar from "../components/Navbar";
 
 function task9() {
   const [name, setName] = useState("");
@@ -9,6 +10,7 @@ function task9() {
   }
   return (
     <div>
+      <Navbar />
       <button onClick={handleFetch}>fetch</button>
       <p>Name:{name}</p>
     </div>

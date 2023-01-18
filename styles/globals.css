@@ -10,100 +10,7 @@
   align-items: center;
 } */
 
-/* navbar start here ====================================================*/
 
-
-.container1{
-  max-width: 1200px;
-  width: 90%;
-  margin: auto;
-}
-
-.navbar{
-  box-shadow: 0px 5px 10px 0px #aaa;
-  position: fixed;
-  width: 100%;
-  background: #fff;
-  color: #000;
-  opacity: 0.85;
-  z-index: 100;
-}
-
-.navbar-container{
-  display: flex;
-  justify-content: space-between;
-  height: 64px;
-  align-items: center;
-}
-
-.menu-items{
-  order: 2;
-  display: flex;
-}
-
-
-.menu-items li{
-  list-style: none;
-  margin-left: 1.5rem;
-  font-size: 1.3rem;
-}
-
-.navbar a{
-  color: #444;
-  text-decoration: none;
-  font-weight: 500;
-  transition: color 0.3s ease-in-out;
-}
-
-.navbar a:hover{
-  color: #117964;
-}
-
-@media (max-width: 648px){
-  .navbar{
-      opacity: 0.95;
-  }
-
- 
-
-  .navbar-container{
-      display: block;
-      position: relative;
-      height: 64px;
-  }
-
- 
-  .navbar .menu-items{
-      padding-top: 100px;
-      background: #fff;
-      height: 100vh;
-      max-width: 300px;
-      transform: translate(-150%);
-      display: flex;
-      flex-direction: column;
-      margin-left: -40px;
-      padding-left: 40px;
-      transition: transform 0.5s ease-in-out;
-      box-shadow:  5px 0px 10px 0px #aaa;
-      overflow: scroll;
-  }
-
-  .navbar .menu-items li{
-      margin-bottom: 1.8rem;
-      font-size: 1.1rem;
-      font-weight: 500;
-  }
-
-
-
-}
-
-
-
-
-
-
-/* navbar end here =======================================================*/
 .card{
  
   display: flex;
@@ -137,28 +44,29 @@
 /* task1 css */
 
 
-.container{
+.container1{
+  width:435px;
   display: grid;
   border:1rem solid rgb(13, 224, 30);
   grid-template-rows:repeat(8,1fr); 
 }
 
-.row{
+.row1{
   display:grid;
   grid-template-columns:repeat(8,1fr);
   /* background-color: aqua; */
 }
 
-.block{
+.block1{
   height: 50px;
   width: 50px;
   border: 1px solid rgb(0, 0, 0);
 }
-.row:nth-child(odd) .block:nth-child(odd){
+.row1:nth-child(odd) .block1:nth-child(odd){
  
   background-color: rgb(0,0,0);
 }
-.row:nth-child(even) .block:nth-child(even){
+.row1:nth-child(even) .block1:nth-child(even){
   background-color: rgb(0,0,0);
 }
 
@@ -222,4 +130,68 @@
   font-size: large;
   border:none;
   margin-bottom: 10px;
+}
+
+/* task10 card design */
+
+
+#our-program {
+  padding: 70px 0;
+  background: #fff;
+}
+
+#our-program .top {
+  margin-bottom: 50px;
+}
+
+.card10 {
+  overflow: hidden;
+  border-radius:0 0 10px 10px;
+  position: relative;
+  font-family: 'lato';
+  background: #fff;
+  text-align: center;
+  -webkit-box-shadow: -4px 2px 10px 3px rgba(0,0,0,0.50);
+  -moz-box-shadow: -4px 2px 10px 3px rgba(0,0,0,0.50);
+  box-shadow: -4px 2px 10px 3px rgba(0,0,0,0.50);
+  margin-bottom: 30px;
+}
+
+.card-img-top {
+max-height: 250px;
+overflow: hidden;
+}
+
+.card-img-top img {
+width: 100%;
+transition: .3s all;
+}
+
+.card:hover .card-img-top img {
+transform: scale(1.2);
+}
+
+.card10 img{
+  width: 110%;
+  height: 100%;
+}
+
+.card10 h4 {
+  padding-top: 25px;
+  font-weight: 700;
+}
+
+.card10 .card-text {
+  width: 80%;
+  margin: 0 auto;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.card-footer {
+  background: #029eb7;
+  padding: 10px 30px;
+  font-weight: 700;
+  font-size: 15px;
+  display: inline-block;
 }
