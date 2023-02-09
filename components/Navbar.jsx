@@ -75,7 +75,7 @@ function Navbar() {
               aria-haspopup="true"
               aria-expanded="false"
             >
-              Task6-10
+              Task6-12
             </Link>
             <div
               className="dropdown-menu"
@@ -95,6 +95,9 @@ function Navbar() {
               </Link>
               <Link className="dropdown-item" href="/task10">
                 task10
+              </Link>
+              <Link className="dropdown-item" href="/task11">
+                task11
               </Link>
             </div>
           </li>
